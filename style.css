@@ -10,23 +10,31 @@
 }
 .header{
   display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
+justify-content: space-between;
+  align-items: center;
   padding: 40px;
   font-size: 20px;
   flex-wrap: wrap;
+}
+.log{
+  display: flex;
+  padding-right:500px;
+}
+.log>span{
+  background-color:#76739c;
+  border-radius: 50%;
+  font-size: 50px;
+  height: 60px;
+  width: 60px;
+}
+.header>a{
+  color: #76739c;
+}
+.header>a:hover{
+  background: #76739c;
+  color: white;
+}
 
-}
-.service:hover{
-  background-color:#22b9eb;
-}
-.service:active{
-  padding: 20px;
-}
-
-.course:active{
-  padding-bottom: 20px;
-}
 .content{
   height: 650px;
  display: flex;
@@ -49,7 +57,7 @@ button{
   border: none;
 }
  button:hover{
-   background-color: #E3F4F4;
+   background-color: #96959d;
  }
   button:active{
     border: 4px solid grey;
@@ -70,22 +78,81 @@ button{
  line-height: 0%;
 }
 
-
 .description{
   text-align: center;
   padding: 20px;
   line-height: 50px;
   font-size: 20px;
   border: 1px solid #e4e3ec;
-
+}
+.description>p{
+  line-height: 30px;
 }
 a{
   text-decoration: none;
 }
+
+.imgContainer{
+  display: flex;
+  flex-direction:column;
+  padding: 20px;
+}
+.imgOneContainer,.imgTwoContainer,.imgThreeContainer{
+  display:flex;
+  position: relative;
+  margin-bottom: 160px;
+
+}
+.imgTwoContainer{
+  justify-content: flex-end;
+}
+.imgOne,.imgTwo,.imgThree{
+    background-image: url("https://media.istockphoto.com/id/1034528424/photo/grey-concrete-wall.jpg?s=612x612&w=0&k=20&c=ZU4XlOklxc-I4UmjUAg8hth1YkJL0fMrEyO9FcXGz_w=");
+    color: white;
+    position: absolute;
+    padding: 30px;
+    font-size: 20px;
+    width: 470px;
+    height: 220px;
+
+  }
+  .imgOne,.imgThree{
+    top:500px;
+    left:500px;
+  }
+.imgTwo{
+  top:500px;
+  right: 600px;
+}
+
+.imgOne>h1{
+  margin-bottom: 20px;
+}
+.imgOne>button{
+  margin-top: 20px;
+}
+.imgTwo>h1{
+  margin-bottom: 20px;
+}
+.imgTwo>button{
+  margin-top: 20px;
+}
+.imgThree>h1{
+  margin-bottom: 20px;
+}
+.imgThree>button{
+  margin-top: 20px;
+}
+
+
+
+
+
 .contactUs{
   text-align: center;
   font-size: 30px;
   line-height: 60px;
+  margin-top: 60px;
 
 }
 .btnContact{
@@ -125,10 +192,29 @@ padding: 65px 60px;
   padding-right: 220px;
   color:white;
 }
-.contactForm{
-  padding: 20px;
+
+.heading{
+  text-align: center;
+  padding: 40px;
+  font-size:60px;
 }
-.contactForm > input{
-  border-radius: 6px;
-  border: none;
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #76739c;
+}
+.formContainer>input,textarea{
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 10px;
+  border:2px solid #76739c;
+}
+.serviceHeading{
+  text-align: center;
+  font-size: 30px;
+}
+.serviceHeading>p{
+  margin-bottom: 50px;
 }
