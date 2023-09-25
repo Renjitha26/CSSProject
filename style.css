@@ -8,10 +8,11 @@
   margin: 0;
   padding: 0;
 }
+
 .header{
   display: flex;
 justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 40px;
   font-size: 20px;
   flex-wrap: wrap;
@@ -39,7 +40,8 @@ justify-content: space-between;
   height: 650px;
  display: flex;
  align-items: center;
-background-image: url("https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cm9ja2V0JTIwbWFpbnRlbmFuY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+background-image: url("https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80");
+background-size: cover;
 }
 
 .subContent{
@@ -49,6 +51,7 @@ background-image: url("https://images.unsplash.com/photo-1518365050014-70fe72328
   display: flex;
   flex-direction: column;
   font-size: 30px;
+  width:700px;
 }
 
 button{
@@ -77,6 +80,10 @@ button{
   flex-wrap: wrap;
  line-height: 0%;
 }
+.scardOne,.scardTwo,.scardThree{
+  height: 600px;
+  width:600px;
+}
 
 .description{
   text-align: center;
@@ -103,6 +110,7 @@ a{
   margin-bottom: 160px;
 
 }
+
 .imgTwoContainer{
   justify-content: flex-end;
 }
@@ -114,8 +122,7 @@ a{
     font-size: 20px;
     width: 470px;
     height: 220px;
-
-  }
+}
   .imgOne,.imgThree{
     top:500px;
     left:500px;
@@ -125,36 +132,23 @@ a{
   right: 600px;
 }
 
-.imgOne>h1{
-  margin-bottom: 20px;
+.imgOne>h1,p{
+    margin-bottom: 20px;
 }
-.imgOne>button{
-  margin-top: 20px;
+.imgTwo>h1,p{
+    margin-bottom: 20px;
 }
-.imgTwo>h1{
-  margin-bottom: 20px;
+.imgThree>h1,p{
+    margin-bottom: 20px;
 }
-.imgTwo>button{
-  margin-top: 20px;
-}
-.imgThree>h1{
-  margin-bottom: 20px;
-}
-.imgThree>button{
-  margin-top: 20px;
-}
-
-
-
-
 
 .contactUs{
   text-align: center;
   font-size: 30px;
   line-height: 60px;
   margin-top: 60px;
-
 }
+
 .btnContact{
   color: white;
   font-size: 15px;
@@ -176,13 +170,15 @@ a{
 }
 .bottom{
   font-size: 20px;
-  line-height: 80px;
   display: flex;
   justify-content:space-between;
-  align-items: center;
+  align-items:center;
   background-color:  #e60b67;
-padding: 65px 60px;
+  padding: 65px 60px;
 
+}
+.bottomText>h1{
+  margin-bottom: 20px;
 }
 .btnBottom:hover{
   background-color: #d5d5d8;
@@ -198,12 +194,16 @@ padding: 65px 60px;
   padding: 40px;
   font-size:60px;
 }
+.hrline{
+  border-bottom: 1px solid #d9dee0;
+}
 
 .formContainer{
   display: flex;
   flex-direction: column;
   padding: 20px;
   color: #76739c;
+  margin-bottom: 60px;
 }
 .formContainer>input,textarea{
   margin-bottom: 20px;
@@ -217,4 +217,98 @@ padding: 65px 60px;
 }
 .serviceHeading>p{
   margin-bottom: 50px;
+}
+.programContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin:20px;
+}
+ .pgmSub{
+   line-height: 80px;
+   display: flex;
+   flex-direction: column;
+   font-size: 30px;
+ }
+ .pgmSub p{
+   line-height: 40px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+ }
+ .pgmImgContainer{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding:20px 80px 40px;
+ }
+ .pgmImgContainer>p{
+   margin-top: 40px;
+   margin-bottom: 80px;
+   font-size: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
+ }
+ .btnCleaning{
+   width: 310px;
+ }
+ .cleanImg{
+   padding-bottom: 150px;
+ }
+ table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ th,td {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+th{
+  border-bottom: 2px solid #ddd;
+}
+.borderBottom >td{
+  border-bottom: none;
+}
+
+.tableContainer{
+  text-align: center;
+  padding: 60px;
+  margin-bottom: 40px;
+}
+.tableContainer p{
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  background-color: black;
+  color: white;
+  padding: 70px;
+}
+.footerLink{
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLink a{
+  color: white;
+  padding-bottom:10px;
+  font-size: 20px;
+}
+.footerContact a{
+  color: white;
+}
+
+.footerIcon a{
+  color: white;
+}
+.footerIcon a{
+ padding: 5px;
 }
